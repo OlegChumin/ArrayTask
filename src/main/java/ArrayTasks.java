@@ -38,6 +38,12 @@ public class ArrayTasks {
         System.out.println();
     }
 
+    public int[] sortAndDisplayReturn(int[] arr) {
+        int[] sorted = arr.clone();
+        Arrays.sort(sorted);
+        return sorted;
+    }
+
     public static void displayMinMax(int[] arr) {
         System.out.println("Максимальный элемент " + Arrays.stream(arr).max().getAsInt());
         System.out.println("Минимальный элемент " + Arrays.stream(arr).min().getAsInt());
